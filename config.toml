@@ -17,7 +17,7 @@ theme = "hugo-blog-awesome"
 
   [[params.socialIcons]]
   name = "discord"
-  url = "kawe#9653"
+  url = "https://discord.com/users/kawe#9653"
 
   [params.author]
     intro = "Kawe"
