@@ -1,0 +1,1 @@
+'use strict';window.addEventListener('load',()=>{const a=document.getElementById("totop");if(!a)return;window.onscroll=()=>{document.body.scrollTop>300||document.documentElement.scrollTop>300?(a.style.visibility="visible",a.style.opacity="1"):(a.style.visibility="hidden",a.style.opacity="0")}})

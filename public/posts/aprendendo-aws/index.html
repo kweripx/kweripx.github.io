@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Aprendendo Aws | Kawe.social</title>
+<meta property="og:title" content="Aprendendo Aws | Kawe.social" />
+<meta name="twitter:title" content="Aprendendo Aws | Kawe.social" />
+<meta itemprop="name" content="Aprendendo Aws | Kawe.social" />
+<meta name="application-name" content="Aprendendo Aws | Kawe.social" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="kweripx.github.io" />
+  <meta property="og:image" content="kweripx.github.io" />
+  <meta name="twitter:image" content="kweripx.github.io" />
+  <meta name="twitter:image:src" content="kweripx.github.io" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2023-11-07T18:33:02-0300 />
+    <meta property="article:published_time" content=2023-11-07T18:33:02-0300 />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Aprendendo Aws",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2023-11-07",
+        "description": "",
+        "wordCount":  879 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2023-11-07",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Kawe.social"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.92.2" />
+
+    
+
+    <link rel="canonical" href="kweripx.github.io/posts/aprendendo-aws/">
+    <link href="/kweripx.github.io/style.min.9bd04d0fad85388343088ec85e9afd787ea003e72914d7f57df39c17ab2e7173.css" rel="stylesheet">
+    <link href="/kweripx.github.io/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/kweripx.github.io/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/kweripx.github.io/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/kweripx.github.io/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/kweripx.github.io/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/kweripx.github.io/icons/favicon.ico">
+
+
+
+
+<link rel="manifest" href="/kweripx.github.io/site.webmanifest">
+
+<meta name="msapplication-config" content="/kweripx.github.io/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/kweripx.github.io/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "" class="notransition">
+
+<script src="/kweripx.github.io/js/theme.min.72c6429f3732c0480cc34cdda4062092b6ececfff2e6813a2f3b45d46d11aef9.js" integrity="sha256-csZCnzcywEgMw0zdpAYgkrbs7P/y5oE6LztF1G0Rrvk="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="kweripx.github.io/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Aprendendo Aws</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2023-11-07T18:33:02-03:00" itemprop="datePublished"> Nov 7, 2023 </time>
+                </div>
+                
+            </header><div class="page-content">
+                <ul>
+<li>O que é cloud:
+Cloud é entrega de serviços sobre demanda.</li>
+<li>Amazon EC2 (Elastic Compute Cloud):
+<ul>
+<li>É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza.</li>
+<li>Tipos de Instâncias EC2:
+<ul>
+<li>Uso Geral: Equilibra recursos de computação, memória e redes. Adequado para uma ampla gama de workloads.</li>
+<li>Otimizada para computação: Oferece processadores de alta performance. Ideal para aplicações com uso intensivo de computação e workloads de processamento em lote.</li>
+<li>Otimizada para memória: Oferece a performance rápida para workloads com uso intensivo de memória. Adequada para bancos de alta performance.</li>
+<li>Computação acelerada: Usa aceleradores de hardware para agilizar o processamento de dados. Ideal para fazer streaming de aplicações e workloads gráficos.</li>
+<li>Otimizada para armazenamento: Oferece baixa latência e alta taxa de operações de entrada/saída por segundo (IOPS). Adequada para workloads como sistema de arquivos distribuídos e aplicações de data warehousing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Computação Serverless:
+<ul>
+<li>AWS Lambda:
+<ul>
+<li>Executa código sem provisionar ou gerenciar servidores.</li>
+<li>Pague apenas pelo tempo de computação enquanto o código estiver em execução.</li>
+<li>Use outros serviços AWS para acionar automaticamente o código.</li>
+</ul>
+<ol>
+<li><strong>Criação de Função</strong>: Você começa criando uma função Lambda, que é basicamente o código que você deseja executar. As funções Lambda podem ser escritas em várias linguagens de programação, como Python, Node.js, Java, C#, entre outras.</li>
+<li><strong>Definição de Gatilhos</strong>: Depois de criar sua função Lambda, você precisa definir os gatilhos que acionarão a execução da função. Um gatilho é um evento que desencadeia a execução da função. Os gatilhos podem ser eventos de outros serviços da AWS, como S3, SNS, API Gateway, CloudWatch, entre outros, ou eventos personalizados.</li>
+<li><strong>Implantação de Código</strong>: Você carrega seu código da função Lambda para a AWS. Isso pode ser feito diretamente na AWS Management Console, usando a AWS Command Line Interface (CLI) ou ferramentas de automação.</li>
+<li><strong>Escala Automática</strong>: O AWS Lambda gerencia automaticamente a escala para você. Quando um gatilho é acionado, o AWS Lambda provisiona automaticamente a capacidade necessária para atender a demanda. Isso significa que você não precisa se preocupar com a alocação de recursos ou a capacidade de servidores.</li>
+<li><strong>Execução de Função</strong>: Quando o gatilho é acionado, o AWS Lambda executa sua função. O código da função é executado em um ambiente altamente disponível e gerenciado pela AWS. Você é cobrado apenas pelo tempo de execução real da função, medido em milissegundos.</li>
+<li><strong>Resultados e Logs</strong>: A função Lambda pode retornar resultados e gerar logs que podem ser armazenados em serviços como CloudWatch Logs. Isso ajuda na depuração e no monitoramento do desempenho da função.</li>
+<li><strong>Escalabilidade e Concorrência</strong>: O AWS Lambda lida automaticamente com a escalabilidade e a concorrência. Ele pode executar várias instâncias da sua função simultaneamente para lidar com cargas de trabalho pesadas, se necessário.</li>
+<li><strong>Fim da Execução</strong>: Após a conclusão da execução da função, o ambiente é desativado. Isso permite que você economize recursos quando a função não está em execução.</li>
+<li><strong>Custo Baseado no Uso</strong>: Você é cobrado apenas pelo tempo de execução da função e pelos recursos de computação consumidos durante a execução. Isso torna o AWS Lambda uma opção econômica para cargas de trabalho intermitentes ou de baixo tráfego.</li>
+<li><strong>Integração com Outros Serviços</strong>: O AWS Lambda pode ser facilmente integrado com outros serviços da AWS e também pode ser usado para criar pipelines de processamento de dados, automações, aplicativos de microserviços e muito mais.</li>
+<li>![[LAMBDA DIAGRAM.png]]</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Tipos de armazenamento da AWS:
+<ul>
+<li>Armazenamento em bloco (Amazon EBS):
+<ul>
+<li>No armazenamento em bloco, os arquivos são separados em partes iguais (blocos) de dados.</li>
+<li>O armazenamento em bloco é usado para aplicações executadas em instâncias do Amazon EC2.</li>
+<li>Amazon EBS fornece volumes de armazenamento de blocos para instâncias EC2 (Elastic Compute Cloud).</li>
+<li>É apropriado para armazenamento de dados que requerem acesso de baixa latência, como sistemas de arquivos, bancos de dados e aplicativos que exigem armazenamento persistente.</li>
+<li>![[EBS DIAGRAM.png]]</li>
+</ul>
+</li>
+<li>Armazenamento de objetos (Amazon S3):
+<ul>
+<li>No armazenamento de objetos, cada objeto consiste em dados, metadados e uma chave.</li>
+<li>Amazon S3 é um serviço de armazenamento de objetos altamente escalável e durável.</li>
+<li>É adequado para armazenar dados não estruturados, como arquivos, imagens, vídeos, backups e muito mais.</li>
+<li>![[Amazon S3 Diagram.png]]</li>
+<li>Classes de armazenamento do Amazon S3:
+<ul>
+<li>Oferece opções de armazenamento de classes, como S3 Standard, S3 Intelligent-Tiering, S3 Glacier, entre outras, para atender a diferentes requisitos de desempenho e custo.</li>
+<li>![[Amazon S3 Class Diagram.png]]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Armazenamento de arquivos:
+<ul>
+<li>No Armazenamento de arquivos, vários clientes podem acessar dados armazenados em pastas de arquivos compartilhados</li>
+<li>Amazon Elastic File System:
+<ul>
+<li>Amazon EFS é um sistema de arquivos NFS (Network File System) totalmente gerenciado que pode ser montado em várias instâncias EC2.</li>
+<li>É ideal para aplicativos que exigem compartilhamento de dados entre instâncias EC2.</li>
+<li>![[Amazon Elastic File System Diagram.png]]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bancos de dados AWS:
+<ul>
+<li>Amazon Relational Database Service:
+<ul>
+<li>![[Amazon RDS (Relational Database Service.png]]</li>
+<li>Amazon RDS é um serviço de banco de dados gerenciado que oferece suporte a várias engines de banco de dados relacionais, como MySQL, PostgreSQL, Oracle e SQL Server.</li>
+<li>É projetado para hospedar bancos de dados relacionais de alto desempenho e oferece recursos como escalabilidade automática, backup e recuperação.</li>
+</ul>
+</li>
+<li>Amazon DynamoDB:
+<ul>
+<li>![[Amazon DynamoDB.png]]</li>
+<li>Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado que fornece escalabilidade e desempenho de baixa latência para aplicativos que requerem acesso a dados de alta velocidade e flexibilidade no modelo de dados.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Redes:
+*</li>
+</ul>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/kweripx" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/vitor-qz/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+<a href="kawe#9653" target="_blank" rel="noopener noreferrer me"
+    title="Discord">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 15 205 190" fill="currentColor" stroke="none">
+    <path
+        d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z" />
+    <path
+        d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 .
+        
+    </small>
+</footer><a href="#" title="" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="/kweripx.github.io/js/main.min.755a53de57920ade0170b3d071e1490060110cbcbe88c7906e13993573930cfc.js" integrity="sha256-dVpT3leSCt4BcLPQceFJAGARDLy&#43;iMeQbhOZNXOTDPw="></script>
+
+    
+
+</body>
+</html>

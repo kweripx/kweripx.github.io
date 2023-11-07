@@ -1,0 +1,25 @@
+baseURL = 'kweripx.github.io'
+languageCode = 'en-us'
+title = 'Kawe.social'
+theme = "hugo-blog-awesome"
+
+
+[params]
+  goToTop = true
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/kweripx"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/vitor-qz/"
+
+  [[params.socialIcons]]
+  name = "discord"
+  url = "kawe#9653"
+
+  [params.author]
+    intro = "Kawe"
+    avatar = "https://avatars.githubusercontent.com/u/48696356?v=4"
+    description = "Trying to summarize my learning content"

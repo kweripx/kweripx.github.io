@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kawe.social</title>
+    <link>kweripx.github.io/posts/</link>
+    <description>Recent content in Posts on Kawe.social</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Nov 2023 18:33:02 -0300</lastBuildDate><atom:link href="kweripx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aprendendo Aws</title>
+      <link>kweripx.github.io/posts/aprendendo-aws/</link>
+      <pubDate>Tue, 07 Nov 2023 18:33:02 -0300</pubDate>
+      
+      <guid>kweripx.github.io/posts/aprendendo-aws/</guid>
+      
+      <description>O que é cloud: Cloud é entrega de serviços sobre demanda. Amazon EC2 (Elastic Compute Cloud):  É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza. Tipos de Instâncias EC2:  Uso Geral: Equilibra recursos de computação, memória e redes. Adequado para uma ampla gama de workloads. Otimizada para computação: Oferece processadores de alta performance. Ideal para aplicações com uso intensivo de computação e workloads de processamento em lote.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
