@@ -22,4 +22,4 @@ theme = "hugo-blog-awesome"
   [params.author]
     intro = "Kawe"
     avatar = "https://avatars.githubusercontent.com/u/48696356?v=4"
-    description = "Trying to summarize my learning content"
+    description = "Just trying to learn in public."
