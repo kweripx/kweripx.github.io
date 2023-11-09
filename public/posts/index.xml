@@ -14,7 +14,7 @@
       
       <guid>kweripx.github.io/posts/aprendendo-aws/</guid>
       
-      <description>O que é cloud: Cloud é entrega de serviços sobre demanda. Amazon EC2 (Elastic Compute Cloud):  É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza. Tipos de Instâncias EC2:  Uso Geral: Equilibra recursos de computação, memória e redes. Adequado para uma ampla gama de workloads. Otimizada para computação: Oferece processadores de alta performance. Ideal para aplicações com uso intensivo de computação e workloads de processamento em lote.</description>
+      <description>O que é cloud  Cloud é entrega de serviços sobre demanda. Amazon EC2 (Elastic Compute Cloud):  É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza. Tipos de Instâncias EC2:  Uso Geral: Equilibra recursos de computação, memória e redes. Adequado para uma ampla gama de workloads. Otimizada para computação: Oferece processadores de alta performance. Ideal para aplicações com uso intensivo de computação e workloads de processamento em lote.</description>
       
     </item>
     

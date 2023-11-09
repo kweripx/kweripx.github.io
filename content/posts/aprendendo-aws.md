@@ -4,8 +4,8 @@ date: 2023-11-07T18:33:02-03:00
 draft: false
 ---
 
-* O que é cloud: 
-	Cloud é entrega de serviços sobre demanda. 
+## O que é cloud
+* Cloud é entrega de serviços sobre demanda. 
 * Amazon EC2 (Elastic Compute Cloud): 
 	* É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza.
 	* Tipos de Instâncias EC2: 
