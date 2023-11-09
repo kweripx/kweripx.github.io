@@ -52,7 +52,7 @@
         },
         "datePublished": "2023-11-07",
         "description": "",
-        "wordCount":  879 ,
+        "wordCount":  1994 ,
         "mainEntityOfPage": "True",
         "dateModified": "2023-11-07",
         "image": {
@@ -156,17 +156,25 @@ stroke-linejoin="round" class="feather feather-home">
                     <summary><b></b></summary>
                     <nav id="TableOfContents">
   <ul>
-    <li><a href="#o-que-é-cloud">O que é cloud</a></li>
+    <li><a href="#o-que-é-cloud">O que é cloud</a>
+      <ul>
+        <li><a href="#amazon-ec2-elastic-compute-cloud">Amazon EC2 (Elastic Compute Cloud)</a></li>
+        <li><a href="#computação-serverless">Computação Serverless</a></li>
+        <li><a href="#tipos-de-armazenamento-da-aws">Tipos de armazenamento da AWS</a></li>
+        <li><a href="#bancos-de-dados-aws">Bancos de dados AWS</a></li>
+        <li><a href="#redes">Redes</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </details>
                 <div class="page-content">
                 <h2 id="o-que-é-cloud">O que é cloud</h2>
+<p>Cloud é entrega de serviços sobre demanda.</p>
+<h3 id="amazon-ec2-elastic-compute-cloud">Amazon EC2 (Elastic Compute Cloud)</h3>
 <ul>
-<li>Cloud é entrega de serviços sobre demanda.</li>
-<li>Amazon EC2 (Elastic Compute Cloud):
+<li>É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza.
 <ul>
-<li>É efetivamente a maquina virtual na nuvem, entrega a capacidade computacional. Busca-se pagar apenas pelo que se utiliza.</li>
 <li>Tipos de Instâncias EC2:
 <ul>
 <li>Uso Geral: Equilibra recursos de computação, memória e redes. Adequado para uma ampla gama de workloads.</li>
@@ -178,14 +186,14 @@ stroke-linejoin="round" class="feather feather-home">
 </li>
 </ul>
 </li>
-<li>Computação Serverless:
-<ul>
-<li>AWS Lambda:
-<ul>
-<li>Executa código sem provisionar ou gerenciar servidores.</li>
-<li>Pague apenas pelo tempo de computação enquanto o código estiver em execução.</li>
-<li>Use outros serviços AWS para acionar automaticamente o código.</li>
 </ul>
+<h3 id="computação-serverless">Computação Serverless</h3>
+<h4 id="aws-lambda">AWS Lambda</h4>
+<p>Executa código sem provisionar ou gerenciar servidores.</p>
+<ul>
+<li>Pague apenas pelo tempo de computação enquanto o código estiver em execução.
+<ul>
+<li>Use outros serviços AWS para acionar automaticamente o código.
 <ol>
 <li><strong>Criação de Função</strong>: Você começa criando uma função Lambda, que é basicamente o código que você deseja executar. As funções Lambda podem ser escritas em várias linguagens de programação, como Python, Node.js, Java, C#, entre outras.</li>
 <li><strong>Definição de Gatilhos</strong>: Depois de criar sua função Lambda, você precisa definir os gatilhos que acionarão a execução da função. Um gatilho é um evento que desencadeia a execução da função. Os gatilhos podem ser eventos de outros serviços da AWS, como S3, SNS, API Gateway, CloudWatch, entre outros, ou eventos personalizados.</li>
@@ -202,12 +210,14 @@ stroke-linejoin="round" class="feather feather-home">
 </li>
 </ul>
 </li>
-<li>Tipos de armazenamento da AWS:
+</ul>
+<h3 id="tipos-de-armazenamento-da-aws">Tipos de armazenamento da AWS</h3>
+<h4 id="armazenamento-em-bloco-amazon-ebs">Armazenamento em bloco (Amazon EBS)</h4>
 <ul>
-<li>Armazenamento em bloco (Amazon EBS):
+<li>No armazenamento em bloco, os arquivos são separados em partes iguais (blocos) de dados.
 <ul>
-<li>No armazenamento em bloco, os arquivos são separados em partes iguais (blocos) de dados.</li>
-<li>O armazenamento em bloco é usado para aplicações executadas em instâncias do Amazon EC2.</li>
+<li>O armazenamento em bloco é usado para aplicações executadas em instâncias do Amazon EC2.
+<ul>
 <li>Amazon EBS fornece volumes de armazenamento de blocos para instâncias EC2 (Elastic Compute Cloud).</li>
 <li>É apropriado para armazenamento de dados que requerem acesso de baixa latência, como sistemas de arquivos, bancos de dados e aplicativos que exigem armazenamento persistente.</li>
 <li>![[EBS DIAGRAM.png]]</li>
@@ -241,11 +251,13 @@ stroke-linejoin="round" class="feather feather-home">
 </li>
 </ul>
 </li>
-<li>Bancos de dados AWS:
+</ul>
+<h3 id="bancos-de-dados-aws">Bancos de dados AWS</h3>
 <ul>
 <li>Amazon Relational Database Service:
 <ul>
-<li>![[Amazon RDS (Relational Database Service.png]]</li>
+<li>![[Amazon RDS (Relational Database Service.png]]
+<ul>
 <li>Amazon RDS é um serviço de banco de dados gerenciado que oferece suporte a várias engines de banco de dados relacionais, como MySQL, PostgreSQL, Oracle e SQL Server.</li>
 <li>É projetado para hospedar bancos de dados relacionais de alto desempenho e oferece recursos como escalabilidade automática, backup e recuperação.</li>
 </ul>
@@ -258,8 +270,69 @@ stroke-linejoin="round" class="feather feather-home">
 </li>
 </ul>
 </li>
-<li>Redes:
-*</li>
+</ul>
+<h3 id="redes">Redes</h3>
+<ul>
+<li>Amazon Virtual Private Cloud:
+<ul>
+<li>O Amazon Virtual Private Cloud (VPC) é um serviço da Amazon Web Services (AWS) que permite que você crie uma rede virtual isolada na nuvem. Ele oferece controle total sobre a sua rede, permitindo a criação de sub-redes, configuração de tabelas de rotas, e a definição de gateways de rede. Aqui estão alguns pontos-chave sobre o Amazon VPC:
+<ol>
+<li><strong>Isolamento Lógico</strong>: O Amazon VPC permite que você crie uma rede isolada logicamente na nuvem. Isso significa que você pode lançar recursos da AWS, como instâncias EC2, em uma rede virtual dedicada.</li>
+<li><strong>Sub-redes</strong>: Você pode dividir sua VPC em sub-redes para organizar e isolar recursos. Cada sub-rede é associada a uma ou mais zonas de disponibilidade para garantir alta disponibilidade.</li>
+<li><strong>Gateways</strong>: O Amazon VPC suporta diferentes tipos de gateways para conexões de rede:
+<ul>
+<li><strong>Internet Gateway (IGW)</strong>: Permite que recursos dentro da VPC se comuniquem com a Internet.</li>
+<li><strong>Virtual Private Gateway (VGW)</strong>: Permite conexões VPN (Virtual Private Network) seguras com sua infraestrutura local.</li>
+<li><strong>Peering de VPC</strong>: Permite a comunicação direta entre VPCs.</li>
+</ul>
+</li>
+<li><strong>AWS VPN e Direct Connect</strong>: O Amazon VPC oferece opções para conectar sua VPC à sua infraestrutura local de maneira segura, seja por meio de VPN (Virtual Private Network) ou Direct Connect.</li>
+<li><strong>Segurança</strong>: O Amazon VPC permite que você controle a segurança da sua rede. Você pode usar grupos de segurança para controlar o tráfego de entrada e saída das instâncias EC2, além de utilizar listas de controle de acesso de rede (ACLs) para controlar o tráfego na camada da sub-rede. ![[Pasted image 20231109142626.png]]![[Pasted image 20231109142727.png]]</li>
+<li><strong>Elastic Load Balancing (ELB)</strong>: Você pode usar o Elastic Load Balancer dentro de sua VPC para distribuir o tráfego entre várias instâncias EC2 em diferentes zonas de disponibilidade.</li>
+<li><strong>AWS Resource Access Manager (RAM)</strong>: O Amazon VPC é compatível com o AWS RAM, permitindo que você compartilhe recursos da VPC entre contas da AWS.</li>
+<li><strong>IPv6 Support</strong>: O Amazon VPC oferece suporte para IPv6, permitindo que seus recursos tenham endereços IPv6 públicos e privados.</li>
+<li><strong>AWS PrivateLink</strong>: Permite que você acesse serviços da AWS (como S3 e DynamoDB) de forma privada, sem precisar de tráfego pela Internet pública.</li>
+<li><strong>AWS Transit Gateway</strong>: Facilita a escala da conectividade entre VPCs e suas redes locais.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>AWS Identity And Access Management (IAM):
+<ul>
+<li>O AWS Identity and Access Management (IAM) é um serviço da Amazon Web Services (AWS) que permite que você controle o acesso aos recursos da AWS de forma segura. Aqui estão alguns pontos-chave sobre o IAM:
+<ol>
+<li><strong>Usuários e Grupos</strong>: Com o IAM, você pode criar usuários e grupos para conceder acesso aos serviços da AWS. Os usuários são identidades individuais com credenciais únicas, enquanto grupos são conjuntos de usuários com permissões semelhantes.</li>
+<li><strong>Políticas de Acesso</strong>: O IAM utiliza políticas para definir permissões. As políticas são documentos JSON que especificam quais ações são permitidas ou negadas em recursos específicos. Você pode anexar políticas a usuários, grupos ou funções.</li>
+<li><strong>Funções IAM</strong>: As funções IAM são entidades que definem uma coleção de políticas e permissões associadas. Elas são frequentemente usadas para conceder acesso temporário a recursos, como em casos de acesso a serviços por instâncias EC2.</li>
+<li><strong>Autenticação Multi-Fator (MFA)</strong>: O IAM suporta autenticação multi-fator para aumentar a segurança. Isso requer que os usuários forneçam uma segunda forma de autenticação além de suas credenciais usuais.</li>
+<li><strong>Integração com Serviços AWS</strong>: O IAM é integrado com muitos serviços da AWS, permitindo que você controle quem pode acessar quais recursos em serviços como S3, EC2, RDS e outros.</li>
+<li><strong>Policies de Managed AWS</strong>: A AWS oferece políticas gerenciadas que você pode associar a usuários, grupos ou funções. Essas políticas são criadas e gerenciadas pela AWS e são projetadas para tarefas específicas, facilitando a atribuição de permissões comuns.</li>
+<li><strong>Auditoria e Registro</strong>: O IAM fornece recursos de auditoria, permitindo que você registre e monitore as ações dos usuários. Isso ajuda na detecção de atividades suspeitas e na conformidade com requisitos de segurança.</li>
+<li><strong>Integração com Serviços de Identidade Externos</strong>: O IAM pode ser integrado com serviços de identidade existentes, como Microsoft Active Directory, facilitando a integração de identidades existentes com as permissões da AWS.</li>
+<li><strong>Criação de Políticas Personalizadas</strong>: Além das políticas gerenciadas, você pode criar suas próprias políticas personalizadas para atender a requisitos específicos de segurança e conformidade da sua organização.</li>
+<li><strong>Controle de Acesso Granular</strong>: O IAM oferece controle granular sobre o acesso, permitindo que você especifique permissões a nível de recurso e ação. Isso significa que você pode conceder permissões específicas para ações específicas em recursos específicos.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>AWS Web Application Firewall (WAF):
+<ul>
+<li>O AWS Web Application Firewall (WAF) é um serviço de segurança da Amazon Web Services projetado para proteger suas aplicações web contra ataques maliciosos e tentativas de exploração de vulnerabilidades.
+<ol>
+<li><strong>Proteção contra Ataques</strong>: O AWS WAF ajuda a proteger suas aplicações web contra uma variedade de ataques, incluindo injeção de SQL, cross-site scripting (XSS), cross-site request forgery (CSRF), entre outros.</li>
+<li><strong>Regras Personalizadas</strong>: Você pode criar regras personalizadas no AWS WAF para bloquear ou permitir tráfego com base em condições específicas. Isso permite que você adapte as regras de segurança de acordo com as necessidades específicas da sua aplicação.</li>
+<li><strong>Regras Prontas para Uso</strong>: Além de regras personalizadas, o AWS WAF oferece regras prontas para uso para proteção contra ameaças comuns da web. Isso inclui regras gerenciadas pela AWS e regras da AWS Marketplace.</li>
+<li><strong>Integração com Outros Serviços</strong>: O AWS WAF pode ser integrado com outros serviços da AWS, como o Amazon CloudFront (para distribuição de conteúdo), a Application Load Balancer (para balanceamento de carga) e a API Gateway (para APIs).</li>
+<li><strong>Logs e Métricas</strong>: O serviço fornece logs detalhados que incluem informações sobre tráfego permitido e bloqueado. Além disso, você pode utilizar métricas do Amazon CloudWatch para monitorar o desempenho e a eficácia das suas regras.</li>
+<li><strong>Automação com AWS WAF Rules</strong>: Você pode usar o AWS WAF Rules para automatizar a criação, atualização e exclusão de regras do AWS WAF. Isso permite uma abordagem mais automatizada e dinâmica para a segurança da sua aplicação.</li>
+<li><strong>Integração com AWS Shield</strong>: O AWS WAF pode ser integrado ao AWS Shield, que fornece proteção contra ataques DDoS (Distributed Denial of Service). Essa integração ajuda a proteger sua aplicação contra diferentes tipos de ameaças online.</li>
+<li><strong>Whitelisting e Blacklisting</strong>: O AWS WAF permite que você crie listas brancas (whitelists) e listas negras (blacklists) para controlar quais endereços IP ou ranges são permitidos ou bloqueados.</li>
+<li><strong>Gerenciamento Centralizado</strong>: Se você tem várias aplicações, o AWS WAF permite o gerenciamento centralizado das regras e configurações de segurança, facilitando a aplicação de políticas consistentes em vários ambientes.</li>
+<li><strong>Segurança Ativa e em Tempo Real</strong>: O AWS WAF opera em tempo real, analisando e filtrando o tráfego à medida que ele chega à sua aplicação, oferecendo uma camada de segurança eficaz contra ameaças online.</li>
+</ol>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
