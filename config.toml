@@ -6,6 +6,7 @@ theme = "hugo-blog-awesome"
 
 [params]
   goToTop = true
+  toc = true
 
   [[params.socialIcons]]
   name = "github"
