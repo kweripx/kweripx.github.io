@@ -1,7 +1,7 @@
 ---
 title: "The Last Algorithms Course You'll Need"
 date: 2023-11-09T03:09:43-03:00
-draft: true
+draft: false
 tags: 
   - Algorithms
 ---
